@@ -1,5 +1,7 @@
 # React Accessibility Panel
 
+[![npm version](https://img.shields.io/npm/v/react-accessibility-panel.svg)](https://www.npmjs.com/package/react-accessibility-panel)
+
 🎯 Um painel acessível e personalizável para aplicações React com suporte a:
 
 - ✅ Filtros de correção para daltonismo
