@@ -1,0 +1,44 @@
+{
+  "name": "react-accessibility-panel",
+  "version": "1.0.2",
+  "description": "Painel de acessibilidade para React com suporte a filtros de visão, ajuste de fonte, espaçamento e leitura por voz.",
+  "main": "dist/AccessibilityPanel.js",
+  "files": [
+    "dist",
+    "src/tcc.css",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir dist && copyfiles -u 1 src/*.css dist"
+  },
+  "keywords": [
+    "react",
+    "accessibility",
+    "a11y",
+    "colorblind",
+    "component",
+    "voice",
+    "font-size",
+    "line-height"
+  ],
+  "author": "Victor Balduino <https://github.com/VictorRandom>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VictorRandom/react-accessibility-panel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VictorRandom/react-accessibility-panel/issues"
+  },
+  "homepage": "https://github.com/VictorRandom/react-accessibility-panel#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.7",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "copyfiles": "^2.4.1"
+  }
+}

@@ -1,0 +1,145 @@
+.accessibility-panel {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1.5px 4px rgba(0,0,0,0.06);
+  padding: 32px 24px;
+  max-width: 420px;
+  margin: 36px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  border: none;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  transition: box-shadow 0.2s;
+}
+
+.accessibility-panel:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.16), 0 3px 8px rgba(0,0,0,0.10);
+}
+
+.panel-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 4px;
+  letter-spacing: 0.02em;
+}
+
+.panel-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #274472;
+  margin-bottom: 8px;
+}
+
+.panel-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #f6f8fa;
+  border-radius: 8px;
+  padding: 14px 12px;
+}
+
+.panel-select {
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: 1px solid #bfc9d1;
+  font-size: 1rem;
+  margin-top: 4px;
+  background: #fff;
+  transition: border 0.2s;
+}
+
+.panel-select:focus {
+  border: 1.5px solid #274472;
+  outline: none;
+}
+
+.panel-button {
+  margin-right: 10px;
+  margin-top: 6px;
+  padding: 7px 16px;
+  background: #274472;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.panel-button:hover {
+  background: #3661a3;
+  box-shadow: 0 2px 8px rgba(39,68,114,0.10);
+}
+
+/* Switch de acessibilidade */
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+.switch input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: relative;
+  width: 48px;
+  height: 28px;
+  background: #888;
+  border-radius: 28px;
+  transition: background 0.2s;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(39,68,114,0.08);
+  border: 2px solid #bfc9d1;
+  display: inline-block;
+}
+
+.switch input:checked + .slider {
+  background: #2ecc40;
+  border-color: #2ecc40;
+}
+
+.switch input:not(:checked) + .slider {
+  background: #888;
+  border-color: #888;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+}
+.switch input:checked + .slider {
+  background: #2ecc40;
+  border-color: #2ecc40;
+}
+.switch input:checked + .slider:before {
+  transform: translateX(20px);
+  background: #eaffea;
+}
+.switch input:focus + .slider {
+  outline: 2px solid #274472;
+  outline-offset: 2px;
+}
+.switch-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #274472;
+  margin-left: 8px;
+  user-select: none;
+  letter-spacing: 0.01em;
+}
